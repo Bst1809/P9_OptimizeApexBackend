@@ -4,8 +4,7 @@
       "path": "force-app",
       "default": true
     }
-  ],
-  "name": "OC_Projet9",
+  ], "name" : "OC_P9",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "55.0"
