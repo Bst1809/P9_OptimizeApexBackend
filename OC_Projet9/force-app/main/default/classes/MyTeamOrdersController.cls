@@ -1,9 +1,11 @@
-public without sharing class VFC01_Team {
-    public decimal SumOders{
+public with sharing class MyTeamOrdersController {
+    public decimal ShowTotalOrdersNetAmount{
         get{
-			AggregateResult groupedResults = [SELECT SUM(TotalAmount) total FROM Order];
+			AggregateResult groupedResults = 
+            [SELECT SUM(NetAmount__c) total 
+            FROM Order WHERE Status = 'Ordered'];
+            
 			return (decimal)groupedResults.get('total');
-
         }
         set;
     }
