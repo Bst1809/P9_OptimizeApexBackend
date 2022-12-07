@@ -1,4 +1,3 @@
-@isTest
 public class TestDataFactory {
     public static List<Order> createOrders(Integer numAccounts, Integer numOrdersPerAccount, String ordStatus) {
 
